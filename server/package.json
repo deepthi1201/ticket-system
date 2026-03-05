@@ -2,9 +2,10 @@
   "name": "server",
   "version": "1.0.0",
   "main": "index.js",
- "scripts": {
-  "build": "prisma generate",
+"scripts": {
+  "build": "npx prisma generate && npx prisma migrate deploy",
   "start": "node server.js"
+
 
   },
   "keywords": [],
